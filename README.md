@@ -79,6 +79,8 @@ src/
 * Authentication
 * API integration
 * Dark mode
+## Live Demo
+Live Demo: https://shopcart-gules.vercel.app/
 
 ## Author
 
