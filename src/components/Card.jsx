@@ -2,7 +2,7 @@ import styles from './styles/Card.module.css'
 import {FiHeart} from "react-icons/fi";
 import Cart from './Cart';
 
-let Card = ({img,name,collection,rating,price,status}) => {
+let Card = ({img,name,collection,rating,price,status,Add}) => {
 
   const bgcolor=status==="New" ? "rgb(5, 139, 5)" : "rgb(255, 60, 0)";
 
@@ -51,8 +51,8 @@ let Card = ({img,name,collection,rating,price,status}) => {
         <h3>{name}</h3>
         <h4>{collection}</h4>
         <div>{cardRating(rating)}</div>
-        <h2>{showPrice(price,status)}</h2>
-      <Cart></Cart>
+        {showPrice(price,status)}
+      <Cart Add={Add}></Cart>
       </div>
     </div>
   )

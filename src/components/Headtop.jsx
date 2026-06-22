@@ -2,7 +2,7 @@ import { FiSearch, FiUser, FiShoppingCart, FiChevronDown } from "react-icons/fi"
 import styles from './styles/Headtop.module.css'
 import logo from "../assets/logo.png";
 
-let Headtop = () => {
+let Headtop = ({num}) => {
   return(
     <div className={styles.headtop}>
       <div className={styles.leftside}>
@@ -17,7 +17,7 @@ let Headtop = () => {
       <div className={styles.rightside}>
         <div className={styles.cart}>
           <FiShoppingCart/>
-          <span className={styles.badge}>3</span>
+          <span className={styles.badge}>{num}</span>
           </div>
           <div className={styles.profile}>
           <FiUser className={styles.pic}/> <FiChevronDown/>

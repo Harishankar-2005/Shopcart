@@ -16,6 +16,7 @@ import jacket from './assets/jacket.png'
 import wallet from './assets/wallet.png'
 import bottle from './assets/bottle.png'
 import './App.css'
+import { useState } from 'react';
 
 let dataArr = [
   {
@@ -118,14 +119,17 @@ let dataArr = [
 ]
 
 function App() {
+  const [num,setnum]=useState(0)
+  const Add = () => {
+    setnum(prev => prev+1);
+  }
   return (
     <div className='body'>
     <div className='menu'>
       <Menu/>
     </div>
     <div className='page1'>
-      {/* <div> */}
-        <Headtop></Headtop>
+        <Headtop num={num}></Headtop>
         <Headbottom></Headbottom>
             <div className='card'>
         {dataArr.map((product,idx) => (
@@ -137,9 +141,9 @@ function App() {
             rating={product.rating}
             price={product.price}
             status={product.status}
+            Add={Add}
           />
         ))}
-      {/* </div> */}
       <Changepage></Changepage>
     </div>
     </div>
