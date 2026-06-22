@@ -1,0 +1,46 @@
+.heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading h5{
+  color: rgb(121, 16, 103);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.Category{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+
+.menu span{
+  width: 20px;
+  height: 20px;
+  border: 1.9px solid rgba(0, 0, 0, 0.796);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: transparent;
+  cursor: pointer;
+}
+
+.menu span:active{
+  background-color: rgb(141, 8, 119);
+  color: #fff;
+}
+
+.menu li{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 95%;
+  height: fit-content;
+  padding-left: 15px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 10px;
+}

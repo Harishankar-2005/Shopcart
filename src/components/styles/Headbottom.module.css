@@ -1,0 +1,51 @@
+.headbottom{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  padding-block: 20px;
+}
+
+.leftside{
+  line-height: 1.5;
+}
+
+.leftside p{
+  letter-spacing: 1.5px;
+  font-size: small;
+  font-weight: lighter;
+  color: rgb(109, 106, 106);
+}
+
+
+.btn{
+  margin-inline: 15px;
+  padding: 15px;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  background-color: rgba(236, 236, 236, 0.301);
+}
+
+.btn1{
+  padding: 15px;
+  border-radius: var(--i);
+  border: none;
+  font-size: 1rem;
+  background-color: rgba(236, 236, 236, 0.301);
+}
+
+.btneffect:hover{
+  border: 1px solid purple;
+  color: purple;
+  background-color: rgba(243, 197, 243, 0.274);
+  cursor: pointer;
+}
+
+@media (max-width: 400px) {
+  .btn{
+    display: none;
+  }
+}

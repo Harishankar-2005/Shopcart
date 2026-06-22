@@ -1,0 +1,55 @@
+.rightpage{
+  width: 20vw;
+  height: fit-content;
+  padding: 10px;
+  line-height: 3;
+  background-color: rgba(162, 163, 163, 0.158);
+  /* border-radius: 20px 0px 0px 20px; */
+}
+
+.menu{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  border-bottom: 2px solid rgba(102, 100, 100, 0.253);
+}
+
+.menu li{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 95%;
+  height: fit-content;
+  padding-left: 15px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+
+.menu li:hover{
+  background-color: rgba(85, 67, 102, 0.233);
+  color: purple;
+  font-weight: 500;
+}
+
+.logo{
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.menu li:hover .logo{
+  background-color: purple;
+  color: #ffffffcb;
+}
+
+
+
+
+
+@media (max-width : 730px) {
+  .rightpage{
+    display: none;
+  }
+}
