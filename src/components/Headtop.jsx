@@ -1,8 +1,10 @@
 import { FiSearch, FiUser, FiShoppingCart, FiChevronDown } from "react-icons/fi";
 import styles from './styles/Headtop.module.css'
 import logo from "../assets/logo.png";
+import { useState } from "react";
 
 let Headtop = ({num}) => {
+  const [Text,setText]=useState('')
   return(
     <div className={styles.headtop}>
       <div className={styles.leftside}>
@@ -11,7 +13,9 @@ let Headtop = ({num}) => {
         
         <div className={styles.searchbox}>
           <FiSearch className={styles.icon}/>
-          <input type="Search" placeholder="Search products..."/>
+          <input type="Search" placeholder="Search products..."
+          value={Text} onChange={(e)=>(setText(e.target.value))}
+          />
         </div>
       </div>
       <div className={styles.rightside}>

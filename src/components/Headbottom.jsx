@@ -7,7 +7,7 @@ let Headbottom = () => {
     <div className={styles.headbottom}>
     <div className={styles.leftside}>
       <h2>All Products</h2>
-      <p>Showing 1-10 of 32 results</p>
+      <p>Showing 1-12 of 32 results</p>
     </div>
     <div>
       <button className={`${styles.btn} ${styles.btneffect}`}>sort by popular <FiChevronDown/></button>
